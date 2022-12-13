@@ -3,8 +3,10 @@ def setValue(newValue):
     #지역변수
     x = newValue
     print(x)
+    return x+1
 
 #호출
+#디버깅 중단점
 retValue = setValue(5)
 print( retValue )
 
