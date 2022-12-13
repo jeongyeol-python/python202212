@@ -29,3 +29,21 @@ def intersect(prelist, postlist):
     return result
 
 print( intersect("HAM", "SPAM"))
+
+#함수의 기본인자값
+print("---함수의 기본인자값---")
+def times(a=10, b=20):
+    return a*b
+
+#호출
+print( times() )
+print( times(5) )
+print( times(5,6) )
+
+#키워드인자(파라메터명 명시)
+def connectURI(server, port):
+    strURL = "htt[://" + server + ":" + port
+    return strURL
+
+print( connectURI("credu.com", "80") )
+print( connectURI(port="8080", server="credu.com") ) 
